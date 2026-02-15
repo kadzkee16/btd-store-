@@ -1,0 +1,25 @@
+[
+    {
+        "id": 675870,
+        "customer": {
+            "name": "li7wak ",
+            "phone": "06 98 77 34",
+            "address": "bechar",
+            "wilaya": "bechar"
+        },
+        "items": [
+            {
+                "name": "BTD Summer Shirt",
+                "price": "4,500 DZD",
+                "color": "Charcoal",
+                "img": "teaser_4_new.jpg",
+                "selectedSize": "S",
+                "selectedColor": "Port",
+                "id": 1771109664812
+            }
+        ],
+        "total": "4,500 DZD",
+        "date": "Feb 14",
+        "status": "Processing"
+    }
+]

@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTD | Summer Edition - Premium Menswear</title>
+    <meta name="description"
+        content="Discover BTD Summer Edition. High-quality, breathable, and elegant menswear designed for the modern man. Warm days, clean form.">
+
+    <!-- Google Fonts: Montserrat, Playfair Display, Pinyon Script & Monsieur La Doulaise -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Pinyon+Script&family=Monsieur+La+Doulaise&family=Caveat:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grain-overlay"></div>
+
+    <!-- Preloader -->
+    <div class="loader">
+        <!-- Summer Vibe: Animated Palm Shadow -->
+        <div class="palm-shadow">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <g fill="currentColor">
+                    <!-- Detailed Palm Frond -->
+                    <path d="M450 450 Q 300 430 150 200" fill="none" stroke="currentColor" stroke-width="2" />
+                    <!-- Left Side Leaflets -->
+                    <path d="M220 300 Q 180 320 120 380 Q 200 330 220 300" />
+                    <path d="M240 280 Q 200 300 130 350 Q 220 310 240 280" />
+                    <path d="M260 250 Q 210 260 140 300 Q 230 270 260 250" />
+                    <path d="M280 210 Q 220 220 150 240 Q 240 220 280 210" />
+                    <path d="M300 170 Q 240 180 180 190 Q 260 180 300 170" />
+                    <!-- Right Side Leaflets -->
+                    <path d="M250 330 Q 280 360 310 430 Q 290 350 250 330" />
+                    <path d="M270 300 Q 310 330 350 400 Q 320 320 270 300" />
+                    <path d="M290 270 Q 340 300 390 360 Q 350 280 290 270" />
+                    <path d="M310 230 Q 370 250 430 310 Q 380 240 310 230" />
+                    <path d="M330 190 Q 400 200 470 240 Q 410 190 330 190" />
+                    <!-- Top Tip -->
+                    <path d="M360 140 Q 380 120 420 80 Q 370 130 360 140" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="palm-shadow shadow-2">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <g fill="currentColor">
+                    <path d="M50 450 Q 200 430 350 200" fill="none" stroke="currentColor" stroke-width="2" />
+                    <path d="M150 320 Q 100 340 40 400 Q 130 350 150 320" />
+                    <path d="M170 290 Q 120 310 50 350 Q 140 300 170 290" />
+                    <path d="M190 250 Q 150 270 80 280 Q 160 250 190 250" />
+                </g>
+            </svg>
+        </div>
+
+        <!-- Summer Vibe: Sea Waves -->
+        <div class="sea-waves">
+            <svg viewBox="0 0 1000 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 100 Q 250 50 500 100 T 1000 100 L 1000 200 L 0 200 Z" fill="currentColor">
+                    <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M0 100 Q 250 50 500 100 T 1000 100 L 1000 200 L 0 200 Z;
+                                M0 100 Q 250 150 500 100 T 1000 100 L 1000 200 L 0 200 Z;
+                                M0 100 Q 250 50 500 100 T 1000 100 L 1000 200 L 0 200 Z" />
+                </path>
+            </svg>
+        </div>
+
+        <!-- Summer Vibe: Realistic Sand Dunes -->
+        <div class="sand-dunes-container">
+            <svg viewBox="0 0 1000 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <!-- Sand Texture Filter -->
+                    <filter id="sandNoise">
+                        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                        <feComposite operator="in" in2="SourceGraphic" />
+                    </filter>
+
+                    <!-- Dune Gradient 1 -->
+                    <linearGradient id="duneGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f8e8d0;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e6ccaa;stop-opacity:1" />
+                    </linearGradient>
+
+                    <!-- Dune Gradient 2 -->
+                    <linearGradient id="duneGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f2dfc1;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#d4b494;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Layer 2: Background Dunes -->
+                <g filter="url(#sandNoise)" opacity="0.8">
+                    <path d="M0 300 L1000 300 L1000 120 C850 80 700 180 500 100 C300 20 150 150 0 100 Z"
+                        fill="url(#duneGrad2)" />
+                </g>
+
+                <!-- Layer 1: Foreground Dunes -->
+                <g filter="url(#sandNoise)">
+                    <path d="M0 300 L1000 300 L1000 180 C800 140 600 250 400 160 C200 70 0 180 0 150 Z"
+                        fill="url(#duneGrad1)" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="loader-content">
+            <svg class="handwritten-logo" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <g class="ink-paths">
+                    <!-- Path for B -->
+                    <path class="b-path"
+                        d="M100 60 C100 60 70 60 70 100 C70 140 110 140 110 110 C110 80 80 80 80 110 C80 140 120 140 120 100 C120 60 100 60 100 60 M100 60 L100 140"
+                        fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <!-- Path for T (Calligraphy Style) -->
+                    <path class="t-path" d="M150 75 Q190 40 230 75 M190 55 L190 145" fill="none" stroke="currentColor"
+                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    <!-- Path for D (Size Matched to B & T) -->
+                    <path class="d-path" d="M260 60 L260 140 C320 140 320 60 260 60 M260 140 C240 140 240 120 260 120"
+                        fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </g>
+            </svg>
+            <div class="store-label">.store</div>
+            <div class="summer-edition">summer edition</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-wrapper">
+            <div class="nav-links desktop-only">
+                <a href="#collections" class="nav-white">Collections</a>
+                <a href="#about" class="nav-white">Our Story</a>
+                <a href="#shop" class="nav-white">Shop</a>
+            </div>
+            <!-- Central BTD text remains removed -->
+            <div class="nav-actions">
+                <button class="search-btn action-btn" id="searchTrigger"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="cart-btn action-btn" id="cartTrigger">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="account-btn action-btn" id="accountTrigger">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <button class="menu-toggle mobile-only">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sleek Horizontal Interaction Bar -->
+    <div id="topPanel" class="top-interaction-panel">
+        <div class="panel-wrapper">
+            <!-- Left: Search Area -->
+            <div class="panel-left">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for luxury summer wear..." id="searchInput">
+                </div>
+                <div class="trending-tags">
+                    <span class="label">Trending:</span>
+                    <a href="#">Linen</a>
+                    <a href="#">Bespoke</a>
+                    <a href="#">Silk</a>
+                </div>
+            </div>
+
+            <!-- Right: Wallet/Cart Area -->
+            <div class="panel-right">
+                <div class="wallet-summary">
+                    <span class="wallet-title">Your Bag</span>
+                    <span class="wallet-count">(0 items)</span>
+                    <span class="wallet-total">0.00 DZD</span>
+                </div>
+                <div class="panel-btns">
+                    <a href="#" class="btn btn-outline btn-sm">View Bag</a>
+                    <a href="#" class="btn btn-primary btn-sm">Checkout</a>
+                </div>
+            </div>
+
+            <!-- Close Button -->
+            <button class="close-panel-btn" id="closePanel"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="#collections">Collections</a>
+            <a href="#about">Our Story</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-slider">
+            <img src="hero_beach.jpg" alt="BTD Summer" class="hero-slide active">
+            <img src="hero_slide_new.jpg" alt="BTD Summer" class="hero-slide">
+        </div>
+        <div class="hero-overlay"></div>
+        <div id="cursorShadow" class="cursor-shadow">
+            <i class="fa-solid fa-arrow-pointer"></i>
+        </div>
+        <div class="hero-content container">
+            <span class="hero-subtitle">Warm Days, Clean Form</span>
+            <h1 class="hero-title">SUMMER <br>IS HERE!</h1>
+            <p class="hero-description">Elevate your summer wardrobe with premium fabrics and timeless silhouettes.
+                Designed for comfort, styled for luxury.</p>
+            <div class="hero-btns">
+                <div class="magnetic-wrap">
+                    <a href="#shop" class="btn btn-primary">Shop Collection</a>
+                </div>
+                <div class="magnetic-wrap">
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+
+
+    <!-- Features Section -->
+    <section id="features" class="section reveal">
+        <div class="container grid-3">
+            <div class="feature-card reveal">
+                <i class="fa-solid fa-wind"></i>
+                <h3>Breathable Fabrics</h3>
+                <p>Premium linen and organic cotton for maximum airflow.</p>
+            </div>
+            <div class="feature-card reveal">
+                <i class="fa-solid fa-sun"></i>
+                <h3>Sun-Ready Design</h3>
+                <p>Tailored fits that keep you cool under the summer sun.</p>
+            </div>
+            <div class="feature-card reveal">
+                <i class="fa-solid fa-gem"></i>
+                <h3>Handcrafted Quality</h3>
+                <p>Each piece is crafted with meticulous attention to detail.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Shop Editorial Hero -->
+    <div class="shop-hero-banner reveal">
+        <img src="summer_hero_banner.png" alt="BTD Summer Editorial">
+        <div class="hero-banner-content">
+            <span class="subtitle">Best Relaxing Collection</span>
+            <h2>Summer Stock Essential Collection</h2>
+            <button class="view-more-btn">VIEW MORE</button>
+        </div>
+    </div>
+
+    <!-- Best Seller Product Section -->
+    <section id="shop" class="best-seller-section reveal">
+        <div class="container">
+            <h2 class="section-title-centered">Best Seller Product</h2>
+
+            <div class="best-seller-grid">
+                <!-- Product 1 -->
+                <div class="bs-product-card interactive-card" data-product="Men's Essential Tee" data-price="4,500 DZD"
+                    data-color="Port" data-img="teaser_1.jpg">
+                    <div class="bs-img-box">
+                        <div class="bs-badge">-15%</div>
+                        <img src="teaser_1.jpg" alt="Port">
+                    </div>
+                    <div class="bs-info">
+                        <h3>Men's Essential Tee</h3>
+                        <p class="bs-price">4,500 DZD</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bs-product-card interactive-card" data-product="Men's Essential Tee" data-price="4,500 DZD"
+                    data-color="Deep Forest" data-img="teaser_2.jpg">
+                    <div class="bs-img-box">
+                        <img src="teaser_2.jpg" alt="Deep Forest">
+                    </div>
+                    <div class="bs-info">
+                        <h3>Men's Essential Tee</h3>
+                        <p class="bs-price">4,500 DZD</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bs-product-card interactive-card" data-product="Men's Essential Tee" data-price="4,500 DZD"
+                    data-color="Bone" data-img="teaser_3.jpg">
+                    <div class="bs-img-box">
+                        <div class="bs-badge">-14%</div>
+                        <img src="teaser_3.jpg" alt="Bone">
+                    </div>
+                    <div class="bs-info">
+                        <h3>Men's Essential Tee</h3>
+                        <p class="bs-price">4,500 DZD</p>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bs-product-card interactive-card" data-product="Men's Essential Tee" data-price="4,500 DZD"
+                    data-color="Charcoal" data-img="teaser_4_new.jpg">
+                    <div class="bs-img-box">
+                        <img src="teaser_4_new.jpg" alt="Charcoal">
+                    </div>
+                    <div class="bs-info">
+                        <h3>Men's Essential Tee</h3>
+                        <p class="bs-price">4,500 DZD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Global Interaction Modal Overlay (Boarding Pass Design) -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-content-wrapper horizontal-pass-wrapper">
+            <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+
+            <!-- Step 1: Editorial Product Sheet -->
+            <div id="productSheet" class="product-sheet">
+                <div class="sheet-tape"></div>
+                <div class="sheet-clip"></div>
+                <div class="sheet-brand-logo">BTD</div>
+                <div class="sheet-content">
+                    <div class="sheet-left">
+                        <div class="sheet-pill-tag">PRODUCT SHEET</div>
+
+                        <div class="sheet-field">
+                            <label>NAME:</label>
+                            <span id="sheetName" class="handwritten">ESSENTIAL TEE</span>
+                            <div class="sheet-line"></div>
+                        </div>
+
+                        <div class="sheet-field">
+                            <label>COMPOSITION:</label>
+                            <div class="composition-text">
+                                <p>COTTON - 100%</p>
+                                <p>WASHED FINISH</p>
+                            </div>
+                            <div class="sheet-line"></div>
+                        </div>
+
+                        <div class="sheet-field">
+                            <label>COLORS:</label>
+                            <div class="sheet-colors">
+                                <div class="color-dot active" style="background: #dfd3c3;"></div>
+                                <div class="color-dot" style="background: #2c3e50;"></div>
+                                <div class="color-dot" style="background: #1a1a1a;"></div>
+                            </div>
+                            <div class="sheet-line"></div>
+                        </div>
+
+                        <div class="sheet-field">
+                            <label>SIZE:</label>
+                            <div class="sheet-sizes">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn active">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                            <div class="sheet-line"></div>
+                        </div>
+
+                        <div class="sheet-field">
+                            <label>PRICE:</label>
+                            <span id="sheetPrice" class="handwritten">$45.00</span>
+                            <div class="sheet-line"></div>
+                        </div>
+
+                        <button id="confirmSheet" class="confirm-sheet-btn">CONFIRM & CHECKOUT</button>
+                    </div>
+
+                    <div class="sheet-right">
+                        <div class="sheet-img-container">
+                            <img src="" alt="Product" id="sheetImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boarding-pass-terminal" id="ticketStep" style="display: none;">
+                <!-- Horizontal Boarding Pass Tag -->
+                <div class="boarding-pass" id="tagSystem">
+                    <!-- Left Stub: Vertical Barcode -->
+                    <div class="pass-stub" id="tearPart">
+                        <div class="slide-guide">
+                            <i class="fa-regular fa-hand-pointer"></i>
+                            <div class="slide-arrow">←</div>
+                        </div>
+                        <div class="barcode-vertical">
+                            <div class="barcode-bars">
+                                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                            <span class="barcode-id">ST-2026-BHR</span>
+                        </div>
+                        <!-- Notches for tear effect -->
+                        <div class="notch top"></div>
+                        <div class="notch bottom"></div>
+                    </div>
+
+                    <!-- Right Part: Main Ticket -->
+                    <div id="infoPart" class="pass-main">
+                        <div class="tag-flipper">
+                            <div class="tag-face tag-front">
+                                <div class="pass-content">
+                                    <div class="product-visual">
+                                        <img src="" alt="Product" id="modalImg">
+                                    </div>
+                                    <div class="product-details-editorial">
+                                        <h3 id="modalName">Men's Essential Tee</h3>
+                                        <div class="final-price-box" id="modalPrice">1,300 DZD</div>
+                                        <div class="available-sizes" id="modalMeta">S/M/L/XL</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="tag-face tag-back">
+                                <div class="tag-thank-message">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p>ADDED TO BAG</p>
+                                    <div class="tag-brand-footer">BTD SUMMER EDITION</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interaction-hint">← Slide the perforated strip left to confirm order</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Wallet / Bag Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>THE BAG</h3>
+            <button id="closeCart" class="close-cart-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="cartItemsList" class="cart-items-list">
+            <!-- Dynamic Items -->
+            <div class="empty-cart-msg">Your bag is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="subtotal-row">
+                <span>Total</span>
+                <span id="cartSubtotal">0 DZD</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Reference for Collections Link -->
+    <section id="collections" class="lookbook-section">
+        <div class="container">
+            <div class="lookbook-header reveal">
+                <span class="label">S/S 2026 Lookbook</span>
+                <h2>The Art of <br><em>Summer Living.</em></h2>
+            </div>
+
+            <div class="lookbook-grid">
+                <div class="lookbook-item large reveal">
+                    <img src="lifestyle_beach_linen_1769682891904.png" alt="Summer Lookbook 1">
+                    <div class="lookbook-caption">Marseille, France</div>
+                </div>
+                <div class="lookbook-item small reveal" style="margin-top: 100px;">
+                    <img src="lifestyle_fabric_detail_1769682912182.png" alt="Summer Lookbook 2">
+                    <div class="lookbook-caption">The Organic Touch</div>
+                </div>
+                <div class="lookbook-item medium reveal">
+                    <img src="lifestyle_minimalist_summer_1769682927375.png" alt="Summer Lookbook 3">
+                    <div class="lookbook-caption">Aegean Architecture</div>
+                </div>
+                <div class="lookbook-item tall reveal">
+                    <div class="video-placeholder">
+                        <i class="fa-solid fa-play"></i>
+                        <span>Cinematic Movement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Account & Orders Slider Panel -->
+    <div id="accountPanel" class="account-panel">
+        <div class="panel-header-editorial">
+            <button id="closeAccount" class="close-panel-btn-editorial"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="panel-inner-container">
+            <!-- VIEW 1: MY ACCOUNT MENU -->
+            <div id="accountMenuView" class="account-view active">
+                <h2 class="editorial-title">Hi, Kader</h2>
+                <span class="editorial-subtitle">Exclusive Membership Status</span>
+
+                <!-- Membership Card -->
+                <div class="membership-status-card">
+                    <span class="status-badge">Gold Member</span>
+                    <div class="status-info">
+                        <h4>Summer Insider</h4>
+                        <p>Enjoy free shipping & early access to the 'Dawn' drop.</p>
+                    </div>
+                    <div class="status-perks">
+                        <span class="perk"><i class="fa-solid fa-bolt"></i> Fast delivery</span>
+                        <span class="perk"><i class="fa-solid fa-star"></i> VIP support</span>
+                    </div>
+                </div>
+
+                <ul class="editorial-menu">
+                    <li id="openProfileBtn"><a href="#"><i class="fa-regular fa-user"></i> MY PROFILE <i
+                                class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-map"></i> MY ADDRESS <i
+                                class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-credit-card"></i> CARDS <i
+                                class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li id="openOrdersBtn"><a href="#"><i class="fa-solid fa-box-open"></i> MY ORDERS <i
+                                class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i> COMMUNICATION PREFERENCES <i
+                                class="fa-solid fa-chevron-right arrow"></i></a></li>
+                </ul>
+
+                <hr class="editorial-hr">
+
+                <button class="btn-editorial-logout" id="logoutBtn">LOG OUT</button>
+
+                <div class="customer-care-section">
+                    <span class="section-label">CUSTOMER CARE</span>
+                    <div class="care-icons">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="https://wa.me/213655550848" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+
+                <div class="follow-us-section">
+                    <span class="section-label">FOLLOW US</span>
+                    <div class="care-icons">
+                        <a href="https://www.instagram.com/btd.store.summer?igsh=MTZmNG5rcnVkM2RzdA==" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/213655550848" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+
+                <div class="accordion-links">
+                    <div class="acc-item">TOP BRANDS <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="acc-item">TOP CATEGORIES <i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+
+                <div class="app-badges">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                        alt="App Store">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                        alt="Google Play">
+                </div>
+            </div>
+
+            <!-- VIEW 2: MY ORDERS LIST -->
+            <div id="ordersListView" class="account-view">
+                <div class="back-link" id="backToAccount"><i class="fa-solid fa-chevron-left"></i> Back to my account
+                </div>
+                <h2 class="editorial-title">My orders</h2>
+
+                <div id="dynamicOrdersList" class="orders-items-list">
+                    <!-- Orders will be injected here by script.js -->
+                </div>
+
+                <div class="order-total-sticky">
+                    <span>Total cost:</span>
+                    <strong>7,040 DZD</strong>
+                </div>
+
+                <button class="btn-editorial-outline">SHOW COMPLETED ORDERS</button>
+            </div>
+
+            <!-- VIEW 3: AUTH / CREATE ACCOUNT -->
+            <div id="authView" class="account-view">
+                <div class="auth-header">
+                    <h2 class="editorial-title">Welcome.</h2>
+                    <p class="auth-subtitle">Log in or create an account to access your summer essentials.</p>
+                </div>
+
+                <!-- Toggle Switch -->
+                <div class="auth-toggle-group">
+                    <button class="auth-toggle-btn active" id="showLoginBtn">LOG IN</button>
+                    <button class="auth-toggle-btn" id="showSignupBtn">CREATE ACCOUNT</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form active">
+                    <div class="form-group floating-label">
+                        <input type="email" id="loginEmail" required placeholder=" " autocomplete="email">
+                        <label>Email Address</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input type="password" id="loginPass" required placeholder=" " autocomplete="current-password">
+                        <label>Password</label>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">SIGN IN</button>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                </form>
+
+                <!-- Signup Form -->
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group floating-label">
+                        <input type="text" id="regName" required placeholder=" " autocomplete="name">
+                        <label>Full Name</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input type="email" id="regEmail" required placeholder=" " autocomplete="email">
+                        <label>Email Address</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input type="password" id="regPass" required placeholder=" " autocomplete="new-password">
+                        <label>Password (Min. 6 chars)</label>
+                    </div>
+
+                    <div class="newsletter-checkbox">
+                        <input type="checkbox" id="newsletterOpt" checked>
+                        <label for="newsletterOpt">Subscribe to BTD Journal for exclusive updates.</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width">CREATE ACCOUNT</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- VIEW 4: PROFILE DETAILS -->
+        <div id="profileDetailView" class="account-view">
+            <div class="back-link" id="backToMenu"><i class="fa-solid fa-chevron-left"></i> Back</div>
+            <h2 class="editorial-title">Profile Info</h2>
+
+            <div class="profile-card-minimal">
+                <div class="profile-info-row">
+                    <label>FULL NAME</label>
+                    <p id="profNameDisplay">User Name</p>
+                </div>
+                <div class="profile-info-row">
+                    <label>EMAIL ADDRESS</label>
+                    <p id="profEmailDisplay">user@example.com</p>
+                </div>
+            </div>
+
+            <p class="profile-note">Your account is secured with local encryption. Version: Summer 2026.</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Editorial Newsletter Section -->
+    <section id="newsletter" class="editorial-newsletter">
+        <div class="container">
+            <div class="newsletter-content reveal">
+                <span class="sub-label">The Journal</span>
+                <h2>Join the <br><em>Inner Circle.</em></h2>
+                <p>Receive early access to new drops, exclusive stories, and summer playlists.</p>
+                <form class="minimal-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="E.g. john@example.com" required>
+                        <button type="submit" class="link-btn">Subscribe <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer id="contact" class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand-col">
+                    <h2 class="footer-logo">BTD.</h2>
+                    <p class="brand-manifesto">Warm days, clean form.<br>Redefining summer luxury for the modern
+                        gentleman.</p>
+                    <div class="social-links-minimal">
+                        <a href="https://www.instagram.com/btd.store.summer?igsh=MTZmNG5rcnVkM2RzdA==" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                        <a href="https://wa.me/213655550848" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp">WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Summer Essentials</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2026 BTD Summer Edition. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inline Slideshow Script to bypass cache
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll('.hero-slide');
+            let slideIndex = 0;
+
+            if (slides.length > 1) {
+                setInterval(() => {
+                    // Hide current
+                    slides[slideIndex].classList.remove('active');
+
+                    // Calculate next
+                    slideIndex = (slideIndex + 1) % slides.length;
+
+                    // Show next
+                    slides[slideIndex].classList.add('active');
+                }, 6000); // 6 seconds
+            }
+        });
+    </script>
+    <!-- Checkout Details Modal -->
+    <div id="checkoutModal" class="product-modal">
+        <div class="modal-content-wrapper shipping-details-wrapper checkout-v2">
+            <button class="modal-close" id="closeCheckout"><i class="fa-solid fa-xmark"></i></button>
+            <div class="checkout-grid">
+                <!-- Left: Form -->
+                <div class="checkout-form-side">
+                    <div class="checkout-header">
+                        <h2>Secure Checkout</h2>
+                        <p>Complete your summer look.</p>
+                    </div>
+                    <form id="checkoutForm">
+                        <div class="form-group floating-label">
+                            <input type="text" id="custName" required placeholder=" " autocomplete="name">
+                            <label>Full Name</label>
+                            <i class="fa-regular fa-user input-icon"></i>
+                        </div>
+                        <div class="form-group floating-label">
+                            <input type="tel" id="custPhone" required placeholder=" " maxlength="14" autocomplete="tel">
+                            <label>Phone Number (0X XX XX XX XX)</label>
+                            <i class="fa-solid fa-phone input-icon"></i>
+                        </div>
+                        <div class="form-group floating-label">
+                            <input id="custAddress" required placeholder=" " autocomplete="street-address">
+                            <label>Shipping Address (City, State)</label>
+                            <i class="fa-solid fa-location-dot input-icon"></i>
+                        </div>
+
+                        <div class="form-group floating-label">
+                            <input id="custWilaya" required placeholder=" " autocomplete="address-level1">
+                            <label>Wilaya (State)</label>
+                            <i class="fa-solid fa-map input-icon"></i>
+                        </div>
+
+                        <div class="checkout-actions">
+                            <button type="submit" class="place-order-btn-v2">
+                                <span>CONFIRM ORDER</span>
+                                <div class="btn-shine"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right: Visual Receipt -->
+                <div class="checkout-visual-side">
+                    <div class="visual-message" id="visualMessage">
+                        <h3>Thank You!</h3>
+                        <p>For choosing the product.<br>See you next time.</p>
+                    </div>
+                    <div class="digital-receipt">
+                        <div class="receipt-header">
+                            <h3>BTD.</h3>
+                            <span>SUMMER EDITION</span>
+                        </div>
+                        <div class="receipt-divider"></div>
+                        <div class="receipt-body">
+                            <div class="receipt-row">
+                                <span>Subtotal</span>
+                                <span id="summaryTotal">0 DZD</span>
+                            </div>
+                            <div class="receipt-row">
+                                <span>Shipping</span>
+                                <span class="free-tag">FREE</span>
+                            </div>
+                            <div class="receipt-row total">
+                                <span>TOTAL</span>
+                                <span id="receiptFinal">0 DZD</span>
+                            </div>
+                        </div>
+                        <div class="receipt-footer">
+                            <p>Thank you for choosing BTD.</p>
+                            <div class="barcode-font">||| || ||| || ||||</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div id="successModal" class="product-modal">
+        <div class="modal-content-wrapper success-wrapper">
+            <div class="success-icon">
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <h2>Order Sent!</h2>
+            <p>Your order has been sent successfully. We will contact you soon for confirmation.</p>
+            <button class="view-more-btn"
+                onclick="document.getElementById('successModal').classList.remove('active')">BACK TO HOME</button>
+        </div>
+    </div>
+
+    <!-- Cinematic Lookbook Overlay -->
+    <div id="lookbookOverlay" class="lookbook-overlay">
+        <button class="close-lookbook" id="closeLookbook"><i class="fa-solid fa-xmark"></i></button>
+
+        <div class="lookbook-progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div class="lookbook-slides-container">
+            <!-- Slide 1 -->
+            <div class="lb-slide active">
+                <div class="lb-img-container">
+                    <img src="lifestyle_beach_linen_1769682891904.png" alt="Summer Story">
+                </div>
+                <div class="lb-content">
+                    <span class="lb-label">CHAPTER I: THE AWAKENING</span>
+                    <h2 class="lb-title">The Breath of <br><em>Pure Linen.</em></h2>
+                    <p class="lb-desc">Meticulously woven to capture the Mediterranean breeze. Lightweight, timeless,
+                        and designed for total freedom.</p>
+                    <a href="#shop" class="lb-action-btn" id="lbShopBtn">EXPLORE THE PIECES</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="lb-slide">
+                <div class="lb-img-container">
+                    <img src="lifestyle_minimalist_summer_1769682927375.png" alt="Aegean Soul">
+                </div>
+                <div class="lb-content">
+                    <span class="lb-label">CHAPTER II: AEGEAN SOUL</span>
+                    <h2 class="lb-title">Sculpted by <br><em>The Sun.</em></h2>
+                    <p class="lb-desc">Crisp whites and earthy tones that mirror the architecture of the Aegean. A
+                        silhouette that defines clean luxury.</p>
+                    <a href="#shop" class="lb-action-btn">VIEW COLLECTION</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="lb-navigation">
+            <button class="lb-nav-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="lb-nav-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js?v=4"></script>
+</body>
+
+</html>
